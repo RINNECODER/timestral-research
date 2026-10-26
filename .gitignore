@@ -1,0 +1,7 @@
+data/
+live/
+out/
+*.parquet
+*.log
+*.pid
+__pycache__/

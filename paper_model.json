@@ -1,0 +1,50 @@
+{
+ "frozen_at": "2026-10-26T09:43:25.619510+00:00",
+ "train_end_open_ts": 1782274500,
+ "edge": 0.02,
+ "basis": 1.610000000000582,
+ "basis_note": "constant = last rolling-200 median of (kalshi strike - coinbase 1m close at open-60) over all archived markets; live strike_corr = strike - basis",
+ "features": "logit(mid), logit(p_rw), clip 1e-3",
+ "models": {
+  "3": {
+   "coef": [
+    1.0033229581806018,
+    0.06845705305159451
+   ],
+   "intercept": -9.269990339417318e-05,
+   "n_train": 17596
+  },
+  "4": {
+   "coef": [
+    0.9297588564097758,
+    0.1275876205253351
+   ],
+   "intercept": 0.002031716981186922,
+   "n_train": 17600
+  },
+  "5": {
+   "coef": [
+    0.869494156538093,
+    0.18417051302868254
+   ],
+   "intercept": -0.0014166125536260073,
+   "n_train": 17600
+  },
+  "6": {
+   "coef": [
+    0.762254938964792,
+    0.3249165776558289
+   ],
+   "intercept": -0.00946009913893224,
+   "n_train": 17600
+  },
+  "7": {
+   "coef": [
+    0.8745182289183412,
+    0.21725294453473218
+   ],
+   "intercept": -0.008947099602752287,
+   "n_train": 17599
+  }
+ }
+}

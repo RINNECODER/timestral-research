@@ -1,0 +1,9 @@
+timestral @ git+https://github.com/mistralai/timestral.git
+torch
+numpy
+pandas
+pyarrow
+scikit-learn
+safetensors
+certifi
+websockets
