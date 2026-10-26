@@ -1,4 +1,11 @@
-# Timestral × Kalshi BTC 15-minute markets
+# Timestral research: fine-tuning setup and findings
+
+My notes, code and results from working with Mistral's [Timestral](https://huggingface.co/mistralai/Timestral-209M)
+time-series foundation models (28M and 209M): a **fine-tuning script** (Mistral doesn't ship one), the eval harness,
+and what zero-shot vs fine-tuned actually buys you. The test bed was a hard, well-priced real-world target:
+Kalshi BTC 15-minute markets.
+
+## Benchmark: Kalshi BTC 15-minute markets
 
 Can Mistral's [Timestral](https://huggingface.co/mistralai/Timestral-209M) time-series foundation model, zero-shot or
 fine-tuned, beat the market price on Kalshi's **KXBTC15M** ("Will BTC be up in the next 15 minutes?") after fees?
